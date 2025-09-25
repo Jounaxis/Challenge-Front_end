@@ -5,6 +5,8 @@ import Error from "../pages/Error";
 import Login from "../pages/Login";
 import App from "../App";
 import Historico from "../pages/Historico";
+import Integrantes from "../pages/Integrantes";
+import Cadastro from "../pages/Cadastro";
 
 export const routes = createBrowserRouter ([
   {
@@ -23,6 +25,14 @@ export const routes = createBrowserRouter ([
     {
         path: '/historico',
         element: <Historico />
+    },
+    {
+        path: '/integrantes',
+        element: <Integrantes />
+    },
+    {
+        path: '/cadastro',
+        element: <Cadastro />
     }
 
     ]

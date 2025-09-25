@@ -1,19 +1,19 @@
 import { useEffect } from "react";
 
 
-const Error = () => {
+const Cadastro = () => {
     
     useEffect(() => {
-        document.title = "Entrar - Saúde Digital";
+        document.title = "Cadastre-se - Saúde Digital";
     }, []);
 
     return (
         <main>
             <h1>
-                Futura Página de Login
+                Futura Página de Cadastro
             </h1>
         </main>
     );
 }
 
-export default Error;
+export default Cadastro;
