@@ -9,6 +9,7 @@ import Integrantes from "../pages/Integrantes";
 import Cadastro from "../pages/Cadastro";
 import Telemedicina from "../pages/Telemedicina";
 import Faq from "../pages/Faq";
+import Contato from "../pages/Contato";
 
 export const routes = createBrowserRouter ([
   {
@@ -43,6 +44,10 @@ export const routes = createBrowserRouter ([
     {
         path: '/faq',
         element: <Faq />
+    },
+    {
+        path: '/contato',
+        element: <Contato />
     }
     ]
   }
