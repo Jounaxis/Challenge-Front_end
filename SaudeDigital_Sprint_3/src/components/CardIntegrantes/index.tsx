@@ -1,5 +1,11 @@
-import type { CardIntegranteProps } from "../../types/CardIntegranteProps";
-
+type CardIntegranteProps = {
+  nome: string;
+  rm: string;
+  turma: string;
+  foto: string;
+  github: string;
+  linkedin: string;
+};
 
 export default function CardIntegrante({
   nome,

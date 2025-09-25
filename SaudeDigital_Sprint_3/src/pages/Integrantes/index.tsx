@@ -8,17 +8,17 @@ export default function Integrantes() {
   }, []);
 
   return (
-    <main className="integrantes_container">
+    <main className="pagina_integrantes_main">
       {/* Cabeçalho da página */}
-      <section className="integrantes_cabecalho">
-        <h2 className="integrantes_titulo">Nosso Time</h2>
-        <p className="integrantes_subtitulo">
+      <section className="pagina_integrantes_cabecalho">
+        <h2>Nosso Time</h2>
+        <p>
           Conheça os estudantes responsáveis por desenvolver esta solução digital.
         </p>
       </section>
 
       {/* Grid de Integrantes */}
-      <section className="integrantes_grid">
+      <section className="grid_integrantes">
         {membros.map((membro) => (
           <CardIntegrante key={membro.rm} {...membro} />
         ))}

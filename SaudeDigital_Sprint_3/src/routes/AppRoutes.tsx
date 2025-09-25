@@ -10,6 +10,7 @@ import Cadastro from "../pages/Cadastro";
 import Telemedicina from "../pages/Telemedicina";
 import Faq from "../pages/Faq";
 import Contato from "../pages/Contato";
+import Reagendar from "../pages/Reagendar";
 
 export const routes = createBrowserRouter ([
   {
@@ -48,6 +49,11 @@ export const routes = createBrowserRouter ([
     {
         path: '/contato',
         element: <Contato />
+    }
+    ,
+    {
+        path: '/reagendar/:id',
+        element: <Reagendar />
     }
     ]
   }
