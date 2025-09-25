@@ -341,3 +341,52 @@
 .cartao-integrante a:hover {
   @apply text-[var(--azul-escurecido)] underline;
 }
+
+ /* =========================
+     Formulários
+  ========================= */
+  .cartao_autenticacao {
+    @apply bg-[var(--branco)] p-[1.5rem] rounded-[0.5rem] border border-[var(--cinza-borda)] max-w-[500px] my-[2rem] mx-auto;
+  }
+
+  .campo_formulario {
+    @apply w-full mb-[1rem];
+  }
+
+  .campo_formulario input,
+  .campo_formulario select {
+    @apply w-full p-[0.75rem] border border-[var(--cinza-borda)] rounded-[0.5rem];
+  }
+
+  .campo_formulario input:focus,
+  .campo_formulario select:focus {
+    @apply outline-none border-[var(--azul-principal)] shadow-[0_0_6px_rgba(34,190,214,0.3)];
+  }
+
+  /* =========================
+   Página de Autenticação (Login/Cadastro)
+========================= */
+.pagina_autenticacao_main {
+  @apply flex items-center justify-center min-h-screen bg-[var(--cinza-claro)];
+}
+
+.cartao_autenticacao {
+  @apply bg-[var(--branco)] p-6 rounded-lg border border-[var(--cinza-borda)] shadow-md w-full;
+}
+
+.cartao_autenticacao_cabecalho h1,
+.cartao_autenticacao_cabecalho h2 {
+  @apply text-2xl font-semibold text-center mb-2 text-[var(--azul-principal)];
+}
+
+.cartao_autenticacao_cabecalho p {
+  @apply mb-6 text-[var(--cinza-texto-secundario)] text-center;
+}
+
+.cartao_autenticacao form {
+  @apply space-y-4;
+}
+
+.cartao_autenticacao_rodape {
+  @apply mt-4 text-center;
+}
