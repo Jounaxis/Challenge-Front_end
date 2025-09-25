@@ -390,3 +390,43 @@
 .cartao_autenticacao_rodape {
   @apply mt-4 text-center;
 }
+
+/* =========================
+   Página de FAQ
+========================= */
+.pagina-faq {
+  @apply max-w-5xl mx-auto p-6;
+}
+
+.pagina-faq-cabecalho {
+  @apply text-center mb-10;
+}
+
+.pagina-faq-cabecalho h2 {
+  @apply text-3xl font-bold text-[var(--azul-principal)] mb-2;
+}
+
+.pagina-faq-cabecalho p {
+  @apply text-[var(--cinza-texto-secundario)];
+}
+
+.faq-container {
+  @apply space-y-8;
+}
+
+.faq-categoria {
+  @apply bg-[var(--branco)] border border-[var(--cinza-borda)] rounded-lg p-6 shadow-sm;
+}
+
+.faq-categoria-titulo {
+  @apply text-xl font-semibold text-[var(--cinza-texto)] mb-4;
+}
+
+.faq-pergunta {
+  @apply border border-[var(--cinza-borda)] rounded-md p-4;
+}
+
+.faq-pergunta summary {
+  @apply cursor-pointer font-medium text-[var(--azul-principal)];
+}
+

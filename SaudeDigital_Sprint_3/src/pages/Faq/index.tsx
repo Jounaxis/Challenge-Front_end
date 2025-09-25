@@ -115,33 +115,27 @@ export default function Faq() {
   }, []);
 
   return (
-    <main>
+    <main className="pagina-faq">
       {/* Cabeçalho */}
-      <section>
-        <h2>
-          Dúvidas Frequentes
-        </h2>
+      <section className="pagina-faq-cabecalho">
+        <h2>Dúvidas Frequentes</h2>
         <p>
           Encontre respostas para as perguntas mais comuns sobre nosso serviço
         </p>
       </section>
 
       {/* Conteúdo FAQ */}
-      <section>
+      <section className="faq-container">
         {categorias.map((cat, i) => (
-          <div key={i}>
-            <h3>
-              {cat.titulo}
-            </h3>
-            <div>
+          <div key={i} className="faq-categoria">
+            <h3 className="faq-categoria-titulo">{cat.titulo}</h3>
+            <div className="space-y-3">
               {cat.perguntas.map((p, j) => (
-                <details
-                  key={j}
-                >
+                <details key={j} className="faq-pergunta">
                   <summary>
                     {p.pergunta}
                   </summary>
-                  <p>
+                  <p className="mt-2 text-[var(--cinza-texto-secundario)]">
                     {p.resposta}
                   </p>
                 </details>
