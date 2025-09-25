@@ -24,17 +24,19 @@ export default function Contato() {
   };
 
   return (
-    <main>
-      <section>
+    <main className="flex items-center justify-center min-h-screen bg-[var(--cinza-claro)]">
+      <section className="cartao_autenticacao w-full max-w-lg">
         {/* Cabeçalho da página */}
-        <h2>Contato</h2>
-        <p>
+        <h2 className="text-2xl font-semibold text-center mb-2 text-[var(--azul-principal)]">
+          Contato
+        </h2>
+        <p className="mb-6 text-[var(--cinza-texto-secundario)] text-center">
           Estamos aqui para tirar suas dúvidas, receber sugestões e melhorar
           cada vez mais nosso atendimento.
         </p>
 
         {/* Formulário */}
-        <form id="form-contato" onSubmit={handleSubmit}>
+        <form id="form-contato" onSubmit={handleSubmit} className="space-y-4">
           <div className="campo_formulario">
             <label htmlFor="nome">Nome:</label>
             <input
@@ -71,10 +73,11 @@ export default function Contato() {
               onChange={handleChange}
               placeholder="Escreva sua mensagem aqui..."
               required
+              className="w-full p-[0.75rem] border border-[var(--cinza-borda)] rounded-[0.5rem]"
             />
           </div>
 
-          <button type="submit">
+          <button className="botao w-full" type="submit">
             Enviar Mensagem
           </button>
         </form>

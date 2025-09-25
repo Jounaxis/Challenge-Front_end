@@ -363,6 +363,29 @@
     @apply outline-none border-[var(--azul-principal)] shadow-[0_0_6px_rgba(34,190,214,0.3)];
   }
 
+  
+
+/* =========================
+   Página de Ação (Cancelar/Reagendar)
+========================= */
+.pagina_acao_main {
+  @apply flex items-center justify-center min-h-screen bg-[var(--cinza-claro)] p-6;
+}
+
+.cartao_acao {
+  @apply bg-[var(--branco)] p-8 rounded-lg border border-[var(--cinza-borda)] shadow-md w-full max-w-lg text-center;
+}
+
+.cartao_acao p {
+  @apply text-[var(--cinza-texto-secundario)] mb-6;
+}
+
+.cartao_acao_botoes {
+  @apply flex justify-center gap-4;
+}
+
+
+
   /* =========================
    Página de Autenticação (Login/Cadastro)
 ========================= */
@@ -384,7 +407,7 @@
 }
 
 .cartao_autenticacao form {
-  @apply space-y-4;
+  @apply space-y-6;
 }
 
 .cartao_autenticacao_rodape {

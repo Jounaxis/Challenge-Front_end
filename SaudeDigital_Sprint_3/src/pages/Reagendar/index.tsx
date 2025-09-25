@@ -35,27 +35,31 @@ export default function Reagendar() {
 
   if (!consulta) {
     return (
-      <main>
-        <h2>Consulta não encontrada</h2>
-        <p>
+      <main className="pagina_acao_main">
+        <section className="cartao_acao">
+          <div className="cartao_autenticacao_cabecalho">
+            <h2 className="text-[var(--vermelho-erro)]">Consulta não encontrada</h2>
+          </div>
+          <p>
           A consulta que você está tentando reagendar não foi encontrada.
-        </p>
+          </p>
+        </section>
       </main>
     );
   }
 
   return (
-    <main>
+    <main className="pagina_autenticacao_main">
       {/* Cabeçalho */}
-      <section>
-        <h2>Reagendar Consulta #{consulta.id}</h2>
-        <p>
-          Alterando a consulta com {consulta.medico} ({consulta.especialidade})
-        </p>
-      </section>
+      <section className="cartao_autenticacao max-w-2xl">
+        <div className="cartao_autenticacao_cabecalho">
+          <h2>Reagendar Consulta #{consulta.id}</h2>
+          <p>
+            Alterando a consulta com {consulta.medico} ({consulta.especialidade})
+          </p>
+        </div>
 
-      {/* Formulário */}
-      <section>
+        {/* Formulário */}
         <form onSubmit={handleSubmit}>
           {/* Nova data */}
           <div className="campo_formulario">
@@ -92,11 +96,15 @@ export default function Reagendar() {
           </div>
 
           {/* Botões */}
-          <div>
-            <button type="submit">
+          <div className="cartao_acao_botoes">
+            <button className="botao" type="submit">
               Confirmar Reagendamento
             </button>
-            <button type="button" onClick={() => navigate("/telemedicina")}>
+            <button
+              type="button"
+              className="botao botao-outline"
+              onClick={() => navigate("/telemedicina")}
+            >
               Voltar
             </button>
           </div>
