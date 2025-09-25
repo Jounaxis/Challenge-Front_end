@@ -248,3 +248,31 @@
   .secao_destaque_imagem img {
     @apply block w-full h-full object-cover min-h-[320px];
   }
+
+  /* =========================
+    Erro
+  ========================= */
+  .container_pagina_erro {
+    @apply flex items-center justify-center min-h-screen bg-[var(--cinza-claro)];
+  }
+
+  .container_pagina_erro_conteudo {
+    @apply p-8 text-center;
+  }
+
+  .pagina_erro_titulo {
+    @apply text-6xl md:text-8xl font-bold text-[var(--azul-principal)] mb-2;
+  }
+
+  .pagina_erro_subtitulo {
+    @apply text-xl md:text-2xl text-[var(--cinza-texto)] mb-4;
+  }
+
+  .pagina_erro_paragrafo {
+    @apply text-base md:text-lg text-[var(--cinza-texto)] mb-8 max-w-md mx-auto;
+  }
+
+  .pagina_erro_botao_voltar {
+    @apply bg-[var(--azul-principal)] text-white px-8 py-3 rounded-md font-semibold inline-block 
+           transition-all duration-300 hover:bg-[#1a5fc1];
+  }
