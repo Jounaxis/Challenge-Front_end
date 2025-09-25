@@ -8,13 +8,13 @@ export default function Historico() {
   }, []);
 
   return (
-    <main className="max-w-6xl mx-auto p-6">
+    <main className="historico_container">
       {/* Cabeçalho */}
-      <section className="text-center mb-10">
-        <h2 className="text-3xl font-bold text-[var(--azul-principal)] mb-2">
+      <section className="historico_cabecalho">
+        <h2 className="historico_titulo">
           Histórico de Consultas
         </h2>
-        <p className="text-[var(--cinza-texto-secundario)]">
+        <p className="historico_subtitulo">
           Veja seu histórico completo de consultas
         </p>
       </section>

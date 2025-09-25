@@ -1,12 +1,12 @@
-import './Logo.css'
+import "../../globals.css";
 
 const Logo = () => {
-    return (
-        <div>
-            <h1>Saúde Digital</h1>
-            <p>Hospital das Clínicas</p>
-        </div>
-    )
-}
+  return (
+    <div className="logo">
+      <h1>Saúde Digital</h1>
+      <p>Hospital das Clínicas</p>
+    </div>
+  );
+};
 
 export default Logo;
