@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Error from "../pages/Error";
 import Login from "../pages/Login";
 import App from "../App";
+import Historico from "../pages/Historico";
 
 export const routes = createBrowserRouter ([
   {
@@ -18,6 +19,10 @@ export const routes = createBrowserRouter ([
     {
         path: '/login',
         element: <Login />
+    },
+    {
+        path: '/historico',
+        element: <Historico />
     }
 
     ]
