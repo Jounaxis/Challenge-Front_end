@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --azul-principal: #22BED6;
+  --azul-secundario: #3DCCC7;
+  --azul-escurecido: #2595BE;
+  --laranja: #FF9E3A;
+  --verde-sucesso: #28a745;
+  --vermelho-erro: #e3342f;
+  --cinza-texto: #111111;
+  --cinza-texto-secundario: #222222;
+  --cinza-claro: #f4f4f4;
+  --cinza-mais-claro: #f9f9f9;
+  --branco: #ffffff;
+  --cinza-borda: #cccccc;
+  --cinza-borda-escura: #bbbbbb;
+  --cinza-rodape: #333333;
+  --texto-rodape: #eeeeee;
+
+  --fonte-principal: "Verdana", sans-serif;
+}
+
+@layer base {
+  html, body {
+    @apply h-full;
+    font-family: var(--fonte-principal);
+  }
+
+  body {
+    @apply flex flex-col min-h-screen m-0 p-0 bg-[var(--cinza-claro)];
+  }
+
+  main {
+    @apply flex-1;
+  }
+
+  * {
+    @apply box-border max-w-full;
+  }
+}
