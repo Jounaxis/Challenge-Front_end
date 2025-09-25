@@ -172,3 +172,79 @@
   .rodape_link:hover {
     @apply text-[var(--laranja)] underline;
   }
+
+  /* =========================
+     Cards de Consultas
+  ========================= */
+  .container_consultas {
+    @apply flex justify-center gap-[2rem] p-[2rem] bg-[var(--cinza-claro)];
+  }
+
+  .cartao_consulta {
+    @apply bg-[var(--cinza-mais-claro)] w-[400px] min-h-[500px] flex flex-col justify-between border border-[var(--cinza-borda)] transition-all duration-200 ease-in-out;
+    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.12);
+  }
+
+  .cartao_consulta:hover {
+    @apply -translate-y-[0.375rem];
+    box-shadow: 0 0.75rem 1.75rem rgba(0, 0, 0, 0.18);
+  }
+
+  .cartao_consulta_titulo {
+    @apply text-[1.5rem] font-semibold p-[1.5rem] text-center m-0 border-b border-[var(--cinza-borda-escura)];
+  }
+
+  .cartao_consulta_conteudo {
+    @apply p-[2rem] flex-1;
+  }
+
+  .cartao_consulta_texto {
+    @apply text-[1.5rem] font-semibold mb-[1rem];
+  }
+
+  .cartao_consulta_status {
+    @apply block text-center p-[1.2rem] font-bold text-[1.2rem] text-[var(--branco)];
+  }
+
+  .status_realizada {
+    @apply bg-[var(--azul-principal)];
+  }
+
+  .status_cancelada {
+    @apply bg-[var(--vermelho-erro)];
+  }
+
+  .status_agendada {
+    @apply bg-[var(--azul-principal)];
+  }
+
+  /* =========================
+     Seção Destaque
+  ========================= */
+  .secao_destaque {
+    @apply bg-[var(--branco)];
+  }
+
+  .secao_destaque_container {
+    @apply max-w-[1400px] mx-auto px-6 py-16 grid items-center gap-12 lg:grid-cols-2;
+  }
+
+  .secao_destaque_titulo {
+    @apply font-extrabold leading-tight text-[var(--cinza-texto)] mb-6 text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  .secao_destaque_descricao {
+    @apply leading-relaxed text-[var(--cinza-texto-secundario)] mb-8 max-w-[58ch] text-base md:text-lg;
+  }
+
+  .secao_destaque_botoes {
+    @apply flex flex-wrap gap-4;
+  }
+
+  .secao_destaque_imagem {
+    @apply rounded-2xl overflow-hidden shadow-lg max-w-[720px];
+  }
+
+  .secao_destaque_imagem img {
+    @apply block w-full h-full object-cover min-h-[320px];
+  }

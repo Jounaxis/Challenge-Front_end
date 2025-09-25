@@ -5,7 +5,7 @@ type CardAgendamentoProps = {
   data: string;
   medico: string;
   especialidade: string;
-  status: "AGENDADA";
+  status: "AGENDADA" | "REALIZADA" | "CANCELADA";
 };
 
 export default function CardAgendamento({

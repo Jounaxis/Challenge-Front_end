@@ -7,6 +7,7 @@ import App from "../App";
 import Historico from "../pages/Historico";
 import Integrantes from "../pages/Integrantes";
 import Cadastro from "../pages/Cadastro";
+import Telemedicina from "../pages/Telemedicina";
 
 export const routes = createBrowserRouter ([
   {
@@ -33,8 +34,11 @@ export const routes = createBrowserRouter ([
     {
         path: '/cadastro',
         element: <Cadastro />
+    },
+    {
+        path: '/telemedicina',
+        element: <Telemedicina />
     }
-
     ]
   }
    
