@@ -8,6 +8,7 @@ import Historico from "../pages/Historico";
 import Integrantes from "../pages/Integrantes";
 import Cadastro from "../pages/Cadastro";
 import Telemedicina from "../pages/Telemedicina";
+import Faq from "../pages/Faq";
 
 export const routes = createBrowserRouter ([
   {
@@ -38,6 +39,10 @@ export const routes = createBrowserRouter ([
     {
         path: '/telemedicina',
         element: <Telemedicina />
+    },
+    {
+        path: '/faq',
+        element: <Faq />
     }
     ]
   }
