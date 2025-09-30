@@ -149,3 +149,9 @@ src/
 ```
 
 ---
+
+## Video explicativo sobre o projeto
+
+Abaixo contamos com um vídeo explicativo sobre o projeto postado na plataforma do YouTube.
+
+https://youtu.be/eCoVsrdpV3c?si=ftzJ1NGyTKalPGx4
