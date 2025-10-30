@@ -1,16 +1,16 @@
-import ImagemGustavo from "../assets/img/gustavo.jpg";
+
 import ImagemLucas from "../assets/img/lucas.jpg";
 import ImagemMiguel from "../assets/img/miguel.jpg";
 
 export const membros = [
     {
-      nome: "Gustavo Tavares da Silva",
-      rm: "562827",
+      nome: "",
+      rm: "",
       turma: "1TDSPW",
-      foto: ImagemGustavo,
-      github: "https://github.com/gustavaress",
+      foto: "",
+      github: "",
       linkedin:
-        "https://www.linkedin.com/in/gustavo-tavares-da-silva-b6180a220/",
+        "",
     },
     {
       nome: "Lucas Barranha Giannini",
