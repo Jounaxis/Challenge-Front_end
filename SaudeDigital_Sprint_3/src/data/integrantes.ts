@@ -1,16 +1,16 @@
-
+import ImagemJoao from "../assets/img/joao.jpg"
 import ImagemLucas from "../assets/img/lucas.jpg";
 import ImagemMiguel from "../assets/img/miguel.jpg";
 
 export const membros = [
     {
-      nome: "",
-      rm: "",
+      nome: "João Victor Gomes de Souza",
+      rm: "560907",
       turma: "1TDSPW",
-      foto: "",
-      github: "",
+      foto: ImagemJoao,
+      github: "https://github.com/Jounaxis",
       linkedin:
-        "",
+        "https://www.linkedin.com/in/joão-victor-gomes-de-souza-419432324/",
     },
     {
       nome: "Lucas Barranha Giannini",
