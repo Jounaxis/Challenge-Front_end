@@ -1,14 +1,24 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { useForm } from "react-hook-form";
 import type { Usuario } from "../../types/usuario";
+
+type LoginFormData = {
+  cpf: string;
+  senha: string;
+};
 
 const Login: React.FC = () => {
   const navigate = useNavigate();
-  const [cpf, setCpf] = useState("");
-  const [senha, setSenha] = useState("");
   const [mensagem, setMensagem] = useState("");
   const [corMensagem, setCorMensagem] = useState<"red" | "green">("red");
   const [isLoading, setIsLoading] = useState(false);
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<LoginFormData>();
 
   useEffect(() => {
     document.title = "Login - Saúde Digital";
@@ -19,8 +29,8 @@ const Login: React.FC = () => {
     return usuariosJSON ? JSON.parse(usuariosJSON) : [];
   }
 
-  async function handleLogin(e: React.FormEvent) {
-    e.preventDefault();
+  async function handleLogin(data: LoginFormData) {
+    const { cpf, senha } = data;
     setIsLoading(true);
 
     await new Promise((resolve) => setTimeout(resolve, 500));
@@ -52,36 +62,49 @@ const Login: React.FC = () => {
       <section className="cartao_autenticacao max-w-md">
         <div className="cartao_autenticacao_cabecalho">
           <h2>Login</h2>
-          <p>
-            Acesse sua conta para gerenciar suas consultas
-          </p>
+          <p>Acesse sua conta para gerenciar suas consultas</p>
         </div>
 
-        <form onSubmit={handleLogin}>
+        <form onSubmit={handleSubmit(handleLogin)}>
           <div className="campo_formulario">
             <label htmlFor="cpf">CPF</label>
             <input
               id="cpf"
-              name="cpf"
               type="text"
-              value={cpf}
-              onChange={(e) => setCpf(e.target.value)}
               placeholder="000.000.000-00"
-              required
+              {...register("cpf", {
+                required: "O CPF é obrigatório.",
+                pattern: {
+                  value: /^\d{3}\.\d{3}\.\d{3}-\d{2}$/,
+                  message: "Formato de CPF inválido. Ex: 000.000.000-00",
+                },
+              })}
             />
+            {/* Mensagem de erro de validação */}
+            {errors.cpf && (
+              <span className="text-red-500 text-sm">{errors.cpf.message}</span>
+            )}
           </div>
 
           <div className="campo_formulario">
             <label htmlFor="senha">Senha</label>
             <input
               id="senha"
-              name="senha"
               type="password"
-              value={senha}
-              onChange={(e) => setSenha(e.target.value)}
               placeholder="Digite sua senha"
-              required
+              {...register("senha", {
+                required: "A senha é obrigatória.",
+                minLength: {
+                  value: 6,
+                  message: "A senha deve ter pelo menos 6 caracteres.",
+                },
+              })}
             />
+            {errors.senha && (
+              <span className="text-red-500 text-sm">
+                {errors.senha.message}
+              </span>
+            )}
           </div>
 
           {mensagem && (
