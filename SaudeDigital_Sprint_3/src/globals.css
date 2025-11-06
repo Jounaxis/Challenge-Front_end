@@ -76,32 +76,32 @@
     Botões
   ========================= */
 
- .botao {
-    @apply transition-all bg-[var(--azul-principal)] text-[var(--cinza-claro)] 
-    px-6 py-2 rounded-lg border-[var(--azul-escurecido)] text-center
-    font-semibold border-b-[2px];
-    min-width: auto; /* removido min-width fixo */
-  }
+  .botao {
+      @apply transition-all bg-[var(--azul-principal)] text-[var(--cinza-claro)] 
+      px-6 py-2 rounded-lg border-[var(--azul-escurecido)] text-center
+      font-semibold border-b-[2px];
+      min-width: auto; /* removido min-width fixo */
+    }
 
-  .botao-outline {
-    @apply transition-all border-[var(--azul-principal)] text-[var(--azul-principal)] 
-    bg-transparent border-[3px] px-6 py-2 rounded-lg font-semibold text-center;
-    min-width: auto; /* removido min-width fixo */
-  }
+    .botao-outline {
+      @apply transition-all border-[var(--azul-principal)] text-[var(--azul-principal)] 
+      bg-transparent border-[3px] px-6 py-2 rounded-lg font-semibold text-center;
+      min-width: auto; /* removido min-width fixo */
+    }
 
-  .botao:hover {
-    @apply bg-[var(--azul-escurecido)] hover:-translate-y-[1px] hover:border-b-[6px] active:translate-y-[2px];
-  }
+    .botao:hover {
+      @apply bg-[var(--azul-escurecido)] hover:-translate-y-[1px] hover:border-b-[6px] active:translate-y-[2px];
+    }
 
-  .botao-outline:hover {
-    @apply text-[var(--azul-escurecido)] border-[var(--azul-escurecido)] bg-transparent hover:-translate-y-[1px];
-  }
+    .botao-outline:hover {
+      @apply text-[var(--azul-escurecido)] border-[var(--azul-escurecido)] bg-transparent hover:-translate-y-[1px];
+    }
 
   /* =========================
     Histórico
   ========================= */
   .historico_container {
-    @apply max-w-6xl mx-auto p-6;
+    @apply max-w-6xl mx-auto p-6 rounded-lg;
   }
 
   .historico_cabecalho {
@@ -117,7 +117,7 @@
   }
 
   .container_consultas {
-    @apply flex justify-center gap-[2rem] p-[2rem] bg-[var(--cinza-claro)] grid-cols-1 md:grid-cols-2 lg:grid-cols-3;
+    @apply flex justify-center gap-[2rem] p-[2rem] bg-[var(--cinza-claro)] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 rounded-lg;
   }
 }
 
@@ -179,7 +179,7 @@
   }
 
   .cartao_consulta {
-    @apply bg-[var(--cinza-mais-claro)] w-[400px] min-h-[500px] flex flex-col justify-between border border-[var(--cinza-borda)] transition-all duration-200 ease-in-out;
+    @apply bg-[var(--cinza-mais-claro)] w-[400px] min-h-[500px] flex flex-col justify-between border border-[var(--cinza-borda)] transition-all duration-200 ease-in-out rounded-lg;
     box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.12);
   }
 
@@ -308,9 +308,9 @@
    Card de Integrantes
 ========================= */
 .cartao-integrante {
-  @apply bg-[var(--branco)] w-[280px] min-h-[380px] flex flex-col items-center 
-         justify-between border border-[var(--cinza-borda)] rounded-[0.5rem] 
-         p-[1.5rem] text-center transition-all duration-200 ease-in-out;
+  @apply bg-[var(--branco)] w-[280px] min-h-[380px] flex flex-col items-center
+         justify-between transition-all duration-200 rounded-xl 
+         overflow-hidden text-center p-4;
   box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.12);
 }
 
@@ -321,7 +321,7 @@
 
 .foto-integrante {
   @apply w-[120px] h-[120px] rounded-full object-cover mb-[1rem] 
-         border-4 border-[var(--azul-principal)];
+         border-3 border-[var(--azul-principal)];
 }
 
 .cartao-integrante h3 {
@@ -436,7 +436,7 @@
 }
 
 .faq-categoria {
-  @apply bg-[var(--branco)] border border-[var(--cinza-borda)] rounded-lg p-6 shadow-sm;
+  @apply bg-[var(--branco)] border border-[var(--cinza-borda)] rounded-lg p-6 shadow-sm ;
 }
 
 .faq-categoria-titulo {
