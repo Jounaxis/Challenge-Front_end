@@ -16,10 +16,10 @@ const Rodape = () => {
           <h4>Links Rápidos</h4>
           <ul className="rodape_lista">
             <li className="rodape_item">
-              <Link to="/" className="rodape_link">Home</Link>
+              <Link to="/criar-lembretes" className="rodape_link">Criar Lembrete</Link>
             </li>
             <li className="rodape_item">
-              <Link to="/historico" className="rodape_link">Histórico</Link>
+              <Link to="/dependentes" className="rodape_link">Adicionar Dependente</Link>
             </li>
             <li className="rodape_item">
               <Link to="/telemedicina" className="rodape_link">Telemedicina</Link>

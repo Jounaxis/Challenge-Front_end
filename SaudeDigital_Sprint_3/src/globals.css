@@ -121,6 +121,29 @@
   }
 }
 
+  /* =========================
+    Lembretes
+  ========================= */
+.lembretes_container {
+  @apply max-w-6xl mx-auto p-6 rounded-lg;
+}
+
+.lembretes_cabecalho {
+  @apply text-center mb-10;
+}
+
+.lembretes_titulo {
+  @apply text-3xl font-bold text-[var(--azul-principal)] mb-2;
+}
+
+.lembretes_subtitulo {
+  @apply text-[var(--cinza-texto-secundario)];
+}
+
+.lembretes_listagem {
+  @apply flex justify-center gap-[2rem] p-[2rem] bg-[var(--cinza-claro)] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 rounded-lg;
+}
+
 /* =========================
    Logo
 ========================= */

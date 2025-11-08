@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Cabecalho: React.FC = () => {
+const Cabecalho = () => {
   return (
     <header className="cabecalho">
       {/* Logo */}
@@ -28,13 +28,13 @@ const Cabecalho: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link to="/faq" className="cabecalho_link_navegacao">
-              Dúvidas
+            <Link to="/medicos" className="cabecalho_link_navegacao">
+              Médicos
             </Link>
           </li>
           <li>
-            <Link to="/contato" className="cabecalho_link_navegacao">
-              Fale Conosco
+            <Link to="/lembretes" className="cabecalho_link_navegacao">
+              Lembretes
             </Link>
           </li>
         </ul>
